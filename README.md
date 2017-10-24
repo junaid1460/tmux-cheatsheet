@@ -41,8 +41,10 @@ bind - split-window -v  set -g prefix C-a
 
 
 # my tmux configuration
+```bash
 unbind-key C-b
 bind-key C-a send-prefix
 
 bind-key - split-window -v
 bind-key | split-window -h
+```
