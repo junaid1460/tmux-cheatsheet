@@ -37,4 +37,12 @@ Ctrl-b : "break-pane"
   
 # add to ~/.tmux.conf  
 bind | split-window -h  
-bind - split-window -v  
+bind - split-window -v  set -g prefix C-a
+
+
+# my tmux configuration
+unbind-key C-b
+bind-key C-a send-prefix
+
+bind-key - split-window -v
+bind-key | split-window -h
